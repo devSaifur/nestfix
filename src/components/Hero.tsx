@@ -2,8 +2,6 @@ import { heroDetails } from '@/data/hero'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import AppStoreButton from './AppStoreButton'
-import PlayStoreButton from './PlayStoreButton'
 
 const Hero = () => {
   return (
