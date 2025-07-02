@@ -1,10 +1,10 @@
 export const siteDetails = {
   siteName: 'NestFix',
-  siteUrl: 'https://finwise-omega.vercel.app/',
+  siteUrl: 'https://nestfix.vercel.app/',
   metadata: {
-    title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
+    title: 'NestFix - Effortless Property Management',
     description:
-      'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.'
+      'NestFix is your all-in-one solution for managing rental properties with ease. From tenant communication to maintenance tracking, we simplify property management for landlords and tenants alike.'
   },
   language: 'en-us',
   locale: 'en-US',
