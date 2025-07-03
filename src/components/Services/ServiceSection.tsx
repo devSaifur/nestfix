@@ -101,10 +101,10 @@ const BenefitSection = ({ benefit, imageAtRight }: Props) => {
             <Image
               src={imageSrc}
               alt="title"
-              width="384"
-              height="762"
+              width="584"
+              height="962"
               quality={100}
-              className="lg:ml-0"
+              className="rounded-xl lg:ml-0"
             />
           </div>
         </div>
