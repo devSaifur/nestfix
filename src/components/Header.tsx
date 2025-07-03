@@ -6,7 +6,6 @@ import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaFingerprint } from 'react-icons/fa'
 import { HiBars3, HiOutlineXMark } from 'react-icons/hi2'
 import Container from './Container'
 

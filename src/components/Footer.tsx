@@ -1,17 +1,23 @@
 import { footerDetails } from '@/data/footer'
 import { siteDetails } from '@/data/siteDetails'
 import { getPlatformIconByName } from '@/utils'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaFingerprint } from 'react-icons/fa'
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-hero-background py-10 text-foreground">
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-3">
         <div>
-          <Link href="/" className="flex items-center gap-2">
-            <FaFingerprint className="h-5 w-5 min-w-fit md:h-7 md:w-7" />
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/photos/logo.avif"
+              alt={siteDetails.siteName}
+              width={80}
+              height={80}
+              className="h-16 w-16 min-w-fit rounded-full"
+            />
             <h3 className="manrope cursor-pointer text-xl font-semibold">
               {siteDetails.siteName}
             </h3>
