@@ -3,6 +3,7 @@
 import { menuItems } from '@/data/menuItems'
 import { siteDetails } from '@/data/siteDetails'
 import { Transition } from '@headlessui/react'
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaFingerprint } from 'react-icons/fa'
@@ -21,8 +22,14 @@ const Header = () => {
       <Container className="!px-0">
         <nav className="mx-auto flex items-center justify-between bg-white px-5 py-2 shadow-md md:bg-transparent md:py-10 md:shadow-none">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <FaFingerprint className="h-7 w-7 min-w-fit text-foreground" />
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/photos/logo.avif"
+              alt={siteDetails.siteName}
+              width={80}
+              height={80}
+              className="h-16 w-16 min-w-fit rounded-full"
+            />
             <span className="manrope cursor-pointer text-xl font-semibold text-foreground">
               {siteDetails.siteName}
             </span>
