@@ -19,7 +19,8 @@ const Footer = () => {
               className="h-16 w-16 min-w-fit rounded-full"
             />
             <h3 className="manrope cursor-pointer text-xl font-semibold">
-              {siteDetails.siteName}
+              <span className="text-[#c14100]">Nest</span>
+              <span className="text-[#e87f0b]">Fix</span>
             </h3>
           </Link>
           <p className="mt-3.5 text-foreground-accent">
