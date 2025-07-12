@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/photos/og.jpg',
         width: 1200,
         height: 675,
         alt: siteDetails.siteName
@@ -40,6 +40,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/photos/logo.svg"
+          sizes="any"
+          type="image/svg+xml"
+        ></link>
+      </head>
       <body
         className={`${manrope.className} ${sourceSans.className} antialiased`}
       >
