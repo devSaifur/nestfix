@@ -27,10 +27,11 @@ const Header = () => {
               alt={siteDetails.siteName}
               width={80}
               height={80}
-              className="h-16 w-16 min-w-fit rounded-full"
+              className="size-16 min-w-fit rounded-full md:size-24"
             />
-            <span className="manrope cursor-pointer text-xl font-semibold text-foreground">
-              {siteDetails.siteName}
+            <span className="manrope cursor-pointer text-xl font-semibold md:text-3xl">
+              <span className="text-[#c14100]">Nest</span>
+              <span className="text-[#e87f0b]">Fix</span>
             </span>
           </Link>
 

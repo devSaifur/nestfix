@@ -33,14 +33,14 @@ const Hero = () => {
 
         <Image
           src={heroDetails.centerImageSrc}
-          width={620}
+          width={720}
           height={320}
           quality={100}
           sizes="(max-width: 768px) 100vw, 384px"
           priority={true}
           unoptimized={true}
           alt="app mockup"
-          className="relative z-10 mx-auto mt-12 md:mt-0"
+          className="relative z-10 mx-auto mt-12 rounded-lg md:mt-0"
         />
       </div>
     </section>

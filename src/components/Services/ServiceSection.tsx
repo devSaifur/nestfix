@@ -1,5 +1,6 @@
 'use client'
 
+import { cn } from '@/lib/utils'
 import { IBenefit } from '@/types'
 import clsx from 'clsx'
 import { motion, Variants } from 'framer-motion'
@@ -10,6 +11,7 @@ import ServiceBullet from './ServiceBullet'
 interface Props {
   benefit: IBenefit
   imageAtRight?: boolean
+  className?: string
 }
 
 const containerVariants: Variants = {
@@ -46,11 +48,11 @@ export const childVariants = {
   }
 }
 
-const BenefitSection = ({ benefit, imageAtRight }: Props) => {
+const BenefitSection = ({ benefit, imageAtRight, className }: Props) => {
   const { title, description, imageSrc, bullets } = benefit
 
   return (
-    <section className="benefit-section">
+    <section className={cn('benefit-section rounded-lg', className)}>
       <motion.div
         className="mb-24 flex flex-col flex-wrap items-center justify-center gap-2 lg:flex-row lg:flex-nowrap lg:gap-20"
         variants={containerVariants}
