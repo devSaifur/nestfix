@@ -22,7 +22,7 @@ export const footerDetails: {
       url: '#faq'
     }
   ],
-  email: 'address@yoursite.com',
+  email: 'office@nestfixcorp.com',
   telephone: '(347) 751-6777',
   socials: {
     facebook: 'https://facebook.com'
