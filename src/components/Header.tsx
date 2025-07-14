@@ -17,7 +17,7 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 mx-auto w-full backdrop-blur-md">
+    <header className="fixed left-0 right-0 top-0 z-50 mx-auto w-full bg-blue-100/50 backdrop-blur-md md:top-3 md:max-w-7xl md:rounded-3xl">
       <Container className="!px-0">
         <nav className="mx-auto flex items-center justify-between bg-white px-5 shadow-md md:bg-transparent md:shadow-none">
           {/* Logo */}
