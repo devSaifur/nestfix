@@ -30,16 +30,28 @@ export function ContactForm() {
     }
   })
 
-  const onSubmit = (data: ContactFormValues) => {
-    // handle form submission here
-    alert(JSON.stringify(data, null, 2))
+  const onSubmit = async (data: ContactFormValues) => {
+    // just test
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    if (!res.ok) {
+      console.error('Failed to submit form')
+      return
+    }
+    const result = await res.json()
+    console.log('Form submitted successfully:', result)
   }
 
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="mx-auto flex max-w-72 flex-col gap-y-3 md:max-w-md"
+        className="mx-auto flex max-w-72 flex-col gap-y-3 text-white md:max-w-md"
       >
         <FormField
           control={form.control}
