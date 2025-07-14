@@ -32,19 +32,7 @@ export function ContactForm() {
 
   const onSubmit = async (data: ContactFormValues) => {
     // just test
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-
-    if (!res.ok) {
-      console.error('Failed to submit form')
-      return
-    }
-    const result = await res.json()
-    console.log('Form submitted successfully:', result)
+    console.log('Form submitted:', data)
   }
 
   return (
