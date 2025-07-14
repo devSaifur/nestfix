@@ -1,7 +1,7 @@
 import { ctaDetails } from '@/data/cta'
 import ContactForm from './ContactForm'
 
-const CTA: React.FC = () => {
+const CTA = () => {
   return (
     <section id="cta" className="mb-5 mt-10 lg:my-20">
       <div className="relative z-10 mx-auto h-full w-full py-12 sm:py-20">
