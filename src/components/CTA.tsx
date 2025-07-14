@@ -11,7 +11,7 @@ const CTA: React.FC = () => {
           </div>
 
           <div className="flex h-full flex-col items-center justify-center px-5 text-center text-white">
-            <h2 className="mb-4 max-w-2xl text-2xl font-semibold sm:text-3xl md:text-5xl md:leading-tight">
+            <h2 className="mb-4 max-w-2xl text-xl font-semibold md:text-3xl md:leading-tight">
               {ctaDetails.heading}
             </h2>
           </div>
