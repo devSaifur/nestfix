@@ -49,6 +49,7 @@ export function ContactForm() {
       toast.success('Your message has been sent successfully!')
       form.reset()
     } catch (err) {
+      console.error('Error sending contact form:', err)
       toast.error('Failed to send your message. Please try again later.')
     }
   }
