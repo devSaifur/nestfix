@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { Toaster } from '@/components/ui/sonner'
 import { siteDetails } from '@/data/siteDetails'
 import type { Metadata } from 'next'
 import { Manrope, Source_Sans_3 } from 'next/font/google'
@@ -54,6 +55,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   )
