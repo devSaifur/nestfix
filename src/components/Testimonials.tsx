@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <div className="mx-auto grid w-full max-w-lg gap-14 lg:max-w-full lg:grid-cols-3 lg:gap-8">
       {testimonials.map((testimonial, index) => (
-        <div key={index} className="">
+        <div key={index}>
           <div className="mb-4 flex w-full items-center justify-center lg:justify-start">
             <Image
               src={testimonial.avatar}

@@ -11,7 +11,7 @@ import SectionTitle from './SectionTitle'
 
 const FAQ: React.FC = () => {
   return (
-    <section id="faq" className="py-10 lg:py-20">
+    <section id="faq" className="scroll-mt-24 py-10 lg:py-20">
       <div className="flex flex-col gap-10 lg:flex-row">
         <div className="">
           <p className="hidden text-foreground-accent lg:block">FAQ&apos;S</p>

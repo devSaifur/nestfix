@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import SectionTitle from './SectionTitle'
 
 interface Props {
@@ -6,14 +7,15 @@ interface Props {
   description: string
 }
 
-const Section: React.FC<React.PropsWithChildren<Props>> = ({
+const Section = ({
   id,
   title,
   description,
-  children
-}: React.PropsWithChildren<Props>) => {
+  children,
+  className
+}: React.ComponentPropsWithoutRef<'section'> & Props) => {
   return (
-    <section id={id} className="py-10 lg:py-20">
+    <section id={id} className={cn('py-10 lg:py-20', className)}>
       <SectionTitle>
         <h2 className="mb-4 text-center">{title}</h2>
       </SectionTitle>

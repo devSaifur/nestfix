@@ -3,7 +3,7 @@ import ContactForm from './ContactForm'
 
 const CTA = () => {
   return (
-    <section id="cta" className="mb-5 mt-10 lg:my-20">
+    <section id="cta" className="mb-5 mt-10 scroll-mt-28 lg:my-20">
       <div className="relative z-10 mx-auto h-full w-full py-12 sm:py-20">
         <div className="h-full w-full">
           <div className="absolute inset-0 -z-10 h-full w-full rounded-3xl bg-[#050a02] bg-[linear-gradient(to_right,#12170f_1px,transparent_1px),linear-gradient(to_bottom,#12170f_1px,transparent_1px)] bg-[size:6rem_4rem] opacity-95">

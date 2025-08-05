@@ -22,6 +22,7 @@ const HomePage = () => {
           id="testimonials"
           title="What Our Clients Say"
           description="Hear from those who have partnered with us."
+          className="scroll-mt-24"
         >
           <Testimonials />
         </Section>
